@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxa6rbaldu53c"
-path="res://.godot/imported/warlord-helmet.svg-f29967541997b1b4dab2d179fd518ac9.ctex"
+uid="uid://c23230dd40aq2"
+path="res://.godot/imported/meme.jpg-0fed293878edaf0a496e80dbbe37d7f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://metroidvania_game/warlord-helmet.svg"
-dest_files=["res://.godot/imported/warlord-helmet.svg-f29967541997b1b4dab2d179fd518ac9.ctex"]
+source_file="res://metroidvania_game/logo/meme.jpg"
+dest_files=["res://.godot/imported/meme.jpg-0fed293878edaf0a496e80dbbe37d7f7.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
