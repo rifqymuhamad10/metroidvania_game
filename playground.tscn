@@ -1,9 +1,52 @@
 [gd_scene format=3 uid="uid://bv1q5oqey0ii6"]
 
-[ext_resource type="Texture2D" uid="uid://b2lk52csbexq1" path="res://icon.svg" id="1_rupst"]
+[ext_resource type="PackedScene" uid="uid://mibl7e7c0270" path="res://metroidvania_game/player/player.tscn" id="1_1vv83"]
 
-[node name="Node2D" type="Node2D" unique_id=1474775116]
+[sub_resource type="Gradient" id="Gradient_wtcqt"]
+offsets = PackedFloat32Array(0, 0.5745192)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=966696304]
-position = Vector2(188, 96)
-texture = ExtResource("1_rupst")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ifeun"]
+gradient = SubResource("Gradient_wtcqt")
+width = 32
+height = 32
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7e6j2"]
+size = Vector2(32, 32)
+
+[node name="playground" type="Node2D" unique_id=1474775116]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2041151807]
+position = Vector2(239.00002, 259)
+scale = Vector2(16.75, 0.875)
+texture = SubResource("GradientTexture2D_ifeun")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=2131842166]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=428672961]
+shape = SubResource("RectangleShape2D_7e6j2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=214844950]
+position = Vector2(0.40024376, 110.04729)
+rotation = 1.5781832
+scale = Vector2(10.033766, 1.0702126)
+texture = SubResource("GradientTexture2D_ifeun")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D3" unique_id=95557071]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D3/StaticBody2D" unique_id=1276465906]
+shape = SubResource("RectangleShape2D_7e6j2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1211420008]
+position = Vector2(69, 148.00002)
+rotation = -3.135192
+scale = Vector2(3.6352777, 0.875)
+texture = SubResource("GradientTexture2D_ifeun")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D2" unique_id=81728910]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/StaticBody2D" unique_id=794292323]
+shape = SubResource("RectangleShape2D_7e6j2")
+
+[node name="Player" parent="." unique_id=2134188847 instance=ExtResource("1_1vv83")]
+position = Vector2(171, 106)
